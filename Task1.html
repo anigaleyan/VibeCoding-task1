@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkyRocket Growth - AI Landing</title>
+  <link rel="stylesheet" href="styles5.css" />
+</head>
+
+<body>
+  <a href="#main" class="u-skip-link">Skip to content</a>
+
+  <aside class="banner">
+    🚀 Limited time: <strong>“Pro” is 50% off</strong> if you sign up today.
+  </aside>
+
+  <header class="nav">
+    <div class="l-container nav__content">
+      <div class="logo"><strong>SkyRocket</strong> Growth</div>
+      <nav class="nav__links" aria-label="Main Navigation">
+        <a href="#features">Features</a>
+        <a href="#proof">Proof</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__btns">
+        <button class="c-btn" id="loginBtn">Login</button>
+        <button class="c-btn c-btn--primary js-scroll-pricing">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="l-container">
+    
+    <section class="hero">
+      <div class="hero__left">
+        <span class="c-badge">AI-powered Platform v1.0</span>
+        <h1>Grow your startup <span style="color:var(--primary)">fast</span> with automation</h1>
+        <p class="hero__desc">We combine analytics, email campaigns, and AI copy so your team ships more. Modern tools for modern teams.</p>
+        
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="c-btn c-btn--primary js-signup">Start Free Trial</button>
+          <a href="#proof" class="c-btn">See results</a>
+        </div>
+        
+        <div class="u-mt-1" style="display:flex; gap:8px; flex-wrap:wrap;">
+          <span class="c-pill">⭐ 4.9 rating</span>
+          <span class="c-pill">Used by 12,000+ teams</span>
+          <span class="c-pill">No credit card required</span>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="c-card" style="width: 100%; max-width: 460px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <strong>Live Dashboard</strong>
+            <span class="c-pill" id="timeNow">just now</span>
+          </div>
+          
+          <div class="stats-grid">
+            <div class="c-card" style="padding:15px">
+              <div class="c-pill" style="border:none; padding:0">Visitors</div>
+              <div style="font-size:24px; font-weight:800" id="visitors">12,431</div>
+              <small style="color:#86efac">+12% this week</small>
+            </div>
+            <div class="c-card" style="padding:15px">
+              <div class="c-pill" style="border:none; padding:0">Signups</div>
+              <div style="font-size:24px; font-weight:800" id="signups">1,204</div>
+              <small style="color:#a7f3d0">+8% this week</small>
+            </div>
+          </div>
+
+          <div class="chart-box">
+            <div id="chartLine" class="chart-line"></div>
+            <small style="position:absolute; left:12px; top:10px; opacity:0.5">Real-time Growth</small>
+          </div>
+
+          <div class="u-mt-1" style="display:flex; gap:10px;">
+            <button class="c-btn" id="refreshStats">Refresh</button>
+            <button class="c-btn" id="themeToggle">Toggle Theme</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="grid-features">
+      <article class="c-card">
+        <h3>AI Copy Generator</h3>
+        <p>Writes landing page text in 2 seconds. Reliable, professional, and consistent copy for your brand.</p>
+      </article>
+      <article class="c-card">
+        <h3>Campaign Scheduler</h3>
+        <p>Automates emails and push notifications. Set your schedule and let the AI handle the timing.</p>
+      </article>
+      <article class="c-card">
+        <h3>Smart Segments</h3>
+        <p>Segments users by behavior automatically. Target the right audience without the manual work.</p>
+      </article>
+      <article class="c-card">
+        <h3>Analytics</h3>
+        <p>Real-time charts and dashboards. Monitor your growth with high-fidelity data visualization.</p>
+      </article>
+      <article class="c-card">
+        <h3>Templates</h3>
+        <p>200+ templates designed for conversion. Ready to deploy for any industry or niche.</p>
+      </article>
+      <article class="c-card">
+        <h3>Integrations</h3>
+        <p>Connects to your existing stack. Works with Slack, Stripe, and 50+ other popular tools.</p>
+      </article>
+    </section>
+
+    <section id="proof" class="proof-section">
+      <div class="proof__img">
+        <span class="c-pill" style="position:absolute; top:20px; left:20px">Interactive Preview</span>
+      </div>
+      <div class="proof__content">
+        <h2>Real results for real teams</h2>
+        <p style="color:var(--text-muted)">Teams report higher engagement after switching to our platform. These insights are driven by our core processing engine.</p>
+        <div style="display:flex; gap:10px; margin: 20px 0;">
+          <span class="c-pill">+31% open rate</span>
+          <span class="c-pill">-18% churn</span>
+          <span class="c-pill">+2.4x conv</span>
+        </div>
+        <ul style="padding-left: 20px;">
+          <li>Launch in hours, not weeks</li>
+          <li>Enterprise-grade security standards</li>
+          <li>Human-readable analytics reports</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="u-text-center">Loved by founders</h2>
+      <div class="testimonial-grid u-mt-1">
+        <div class="c-card">
+          <p class="quote">“We increased growth by 999% in 3 minutes. Incredible product. 10/10.”</p>
+          <p class="author">Alex, CEO of TechFlow</p>
+        </div>
+        <div class="c-card">
+          <p class="quote">“The dashboard is so intuitive that our investors stopped asking questions.”</p>
+          <p class="author">Jamie, Head of Operations</p>
+        </div>
+        <div class="c-card">
+          <p class="quote">“Finally, a tool that writes my marketing copy AND handles my technical debt.”</p>
+          <p class="author">Sam, CTO at LaunchPad</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" style="padding: var(--space-lg) 0;">
+      <h2 class="u-text-center">Simple, Transparent Pricing</h2>
+      <div class="pricing-grid">
+        <div class="c-card">
+          <strong>Starter</strong>
+          <div style="font-size:36px; font-weight:800; margin:10px 0">$0</div>
+          <p style="font-size:13px; color:var(--text-muted)">For small side projects</p>
+          <ul style="list-style:none; padding:15px 0; font-size:14px;">
+            <li>✓ 1 project</li>
+            <li>✓ Basic analytics</li>
+            <li>✓ Email support</li>
+          </ul>
+          <button class="c-btn js-signup" style="width:100%">Choose Starter</button>
+        </div>
+        
+        <div class="c-card" style="border-color: var(--primary); transform: scale(1.05);">
+          <div style="display:flex; justify-content:space-between">
+            <strong>Pro</strong>
+            <span class="c-badge" style="font-size:10px">Popular</span>
+          </div>
+          <div style="font-size:36px; font-weight:800; margin:10px 0">$29</div>
+          <p style="font-size:13px; color:var(--text-muted)">For growing startups</p>
+          <ul style="list-style:none; padding:15px 0; font-size:14px;">
+            <li>✓ 10 projects</li>
+            <li>✓ AI Copywriting</li>
+            <li>✓ 24/7 Priority Support</li>
+          </ul>
+          <button class="c-btn c-btn--primary js-signup" style="width:100%">Choose Pro</button>
+        </div>
+
+        <div class="c-card">
+          <strong>Enterprise</strong>
+          <div style="font-size:36px; font-weight:800; margin:10px 0">$??</div>
+          <p style="font-size:13px; color:var(--text-muted)">For large organizations</p>
+          <ul style="list-style:none; padding:15px 0; font-size:14px;">
+            <li>✓ Unlimited projects</li>
+            <li>✓ Custom Training</li>
+            <li>✓ Dedicated Manager</li>
+          </ul>
+          <button class="c-btn" style="width:100%">Contact Sales</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="u-mt-1">
+        <details class="c-card" style="padding:0">
+          <summary>Is this platform real?</summary>
+          <div style="padding:16px; border-top:1px solid var(--border)">The UI is real and fully functional for this demo. The backend processing is simulated for this refactoring task.</div>
+        </details>
+        <details class="c-card" style="padding:0">
+          <summary>Do you support refunds?</summary>
+          <div style="padding:16px; border-top:1px solid var(--border)">We offer a 30-day money-back guarantee for all paid plans, no questions asked.</div>
+        </details>
+        <details class="c-card" style="padding:0">
+          <summary>Can I integrate with Slack?</summary>
+          <div style="padding:16px; border-top:1px solid var(--border)">Yes, we support native integrations with Slack, Discord, and Microsoft Teams.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2>Ready to skyrocket your growth?</h2>
+        <p style="color:var(--text-muted)">Get started for free. No credit card required.</p>
+      </div>
+      <div style="display:flex; gap:12px">
+        <button class="c-btn js-scroll-top">Back to top</button>
+        <button class="c-btn c-btn--primary js-signup">Get Started</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="l-container">
+      <div class="footer__top">
+        <div style="flex:1">
+          <div style="font-weight:700; font-size:18px; color:white">SkyRocket Growth</div>
+          <p>© <span id="year"></span>. All rights reserved.</p>
+        </div>
+        <div style="flex:1; display:flex; gap:40px">
+          <div>
+            <strong>Product</strong>
+            <ul style="list-style:none; padding:10px 0; margin:0">
+              <li><a href="#features" style="color:inherit; text-decoration:none">Features</a></li>
+              <li><a href="#pricing" style="color:inherit; text-decoration:none">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>Support</strong>
+            <ul style="list-style:none; padding:10px 0; margin:0">
+              <li><a href="#faq" style="color:inherit; text-decoration:none">FAQ</a></li>
+              <li><a href="#contact" style="color:inherit; text-decoration:none">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="flex:1; max-width:300px">
+          <p>Disclaimer: This is a refactored demo page designed to showcase clean code practices and semantic HTML architecture.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Current Year
+      document.getElementById("year").innerText = new Date().getFullYear();
+
+      // 2. Scroll Logic
+      const scrollToElement = (id) => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      document.querySelector('.js-scroll-pricing').addEventListener('click', () => scrollToElement('pricing'));
+      document.querySelector('.js-scroll-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // 3. Signup Simulation
+      document.querySelectorAll('.js-signup').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const original = btn.innerText;
+          btn.innerText = "Processing...";
+          btn.disabled = true;
+          setTimeout(() => {
+            btn.innerText = original;
+            btn.disabled = false;
+            alert("Signup flow simulation triggered.");
+          }, 800);
+        });
+      });
+
+      // 4. Stats Simulation
+      const updateStats = () => {
+        const v = 10000 + Math.floor(Math.random() * 9000);
+        const s = 800 + Math.floor(Math.random() * 900);
+        document.getElementById("visitors").innerText = v.toLocaleString();
+        document.getElementById("signups").innerText = s.toLocaleString();
+        document.getElementById("timeNow").innerText = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      };
+
+      document.getElementById("refreshStats").addEventListener('click', updateStats);
+      setInterval(() => { if(Math.random() > 0.7) updateStats(); }, 4000);
+
+      // 5. Theme Toggle Logic
+      document.getElementById("themeToggle").addEventListener('click', () => {
+        const body = document.body;
+        const isDark = getComputedStyle(body).backgroundColor === "rgb(11, 15, 23)";
+        if(isDark) {
+          body.style.setProperty('--bg-body', '#ffffff');
+          body.style.setProperty('--text-main', '#111827');
+          body.style.setProperty('--bg-card', '#f9fafb');
+          body.style.setProperty('--border', '#e5e7eb');
+        } else {
+          body.style.removeProperty('--bg-body');
+          body.style.removeProperty('--text-main');
+          body.style.removeProperty('--bg-card');
+          body.style.removeProperty('--border');
+        }
+      });
+
+      // 6. Visual Effects
+      window.addEventListener("scroll", () => {
+        const y = window.scrollY;
+        const line = document.getElementById("chartLine");
+        if (line) line.style.filter = `hue-rotate(${y % 360}deg)`;
+      });
+    });
+  </script>
+</body>
+</html>
